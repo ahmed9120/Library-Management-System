@@ -27,3 +27,4 @@ C:\Users\Ahmed\LibraryManagementSystem\obj\Debug\net9.0\refint\LibraryManagement
 C:\Users\Ahmed\LibraryManagementSystem\obj\Debug\net9.0\LibraryManagementSystem.pdb
 C:\Users\Ahmed\LibraryManagementSystem\obj\Debug\net9.0\LibraryManagementSystem.genruntimeconfig.cache
 C:\Users\Ahmed\LibraryManagementSystem\obj\Debug\net9.0\ref\LibraryManagementSystem.dll
+C:\Users\Ahmed\LibraryManagementSystem\obj\Debug\net9.0\LibraryManagementSystem.sourcelink.json
