@@ -121,12 +121,14 @@ let main argv =
             Library.borrowBook title
     )
 
+
     btnReturn.Click.Add(fun _ ->
         let title = InputBox "Enter Book Title"
         if not (String.IsNullOrWhiteSpace title) then
             Library.returnBook title
     )
 
+    
     btnDisplay.Click.Add(fun _ -> Library.displayBooks())
     btnExit.Click.Add(fun _ -> form.Close())
 
