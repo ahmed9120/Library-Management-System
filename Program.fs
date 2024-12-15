@@ -65,7 +65,7 @@ module Library =
         | None -> 
             MessageBox.Show(sprintf "Book with title '%s' not found." title, "Error") |> ignore
 
-    // Return a borrowed booook
+    // Return a borrooowed booook
     let returnBook title =
         match books.TryFind title with
         | Some book when not book.IsBorrowed -> 
