@@ -2,7 +2,7 @@ open System
 open System.Windows.Forms
 open System.Collections.Generic
 
-// Define a record type for Book
+// Define a record type for Book
 type Book = {
     Title: string
     Author: string
@@ -28,7 +28,7 @@ module Library =
     let addBook title author genre =
         let newBook = { Title = title; Author = author; Genre = genre; IsBorrowed = false; BorrowDate = None }
         books <- books.Add(title, newBook)
-        MessageBox.Show(sprintf "Book '%s' added successfully." title, "Success") |> ignore
+        MessageBox.Show(sprintf "Book '%s' added successfully." title, "Success adding") |> ignore
 
     // Search for a book by title
     let searchBook title =
@@ -52,7 +52,7 @@ module Library =
                     { record with ReturnedOn = Some DateTime.Now }
                 else record)
 
-    // Borrow a book
+    // Borrow a book from library
     let borrowBook title user =
         match books.TryFind title with
         | Some book when book.IsBorrowed -> 
