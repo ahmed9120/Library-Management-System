@@ -78,7 +78,7 @@ module Library =
         | None -> 
             MessageBox.Show(sprintf "Book with title '%s' not found." title, "Error") |> ignore
 
-    // Display the borrow history
+    // Display the borrow history for it
     let displayBorrowHistory () =
         if borrowHistory.IsEmpty then
             MessageBox.Show("No borrowing history available.", "History") |> ignore
